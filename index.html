@@ -16,15 +16,22 @@
     header {
       background-color: #004466;
       color: white;
-      padding: 40px 20px;
+      padding: 0;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
+    .hero-image {
+      width: 100%;
+      height: auto;
+      display: block;
     }
-    header p {
-      margin-top: 10px;
+    .hero-text {
+      padding: 30px 20px;
+    }
+    .hero-text h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero-text p {
       font-size: 1.2em;
     }
     main {
@@ -60,7 +67,7 @@
       color: #555;
     }
     @media (max-width: 600px) {
-      header h1 {
+      .hero-text h1 {
         font-size: 2em;
       }
       .button {
@@ -75,12 +82,14 @@
 <body>
 
 <header>
-  <h1>OG Mantenimiento Integral</h1>
-  <p>Soluciones ágiles para reclamos, presupuestos y soporte técnico.</p>
+  <img class="hero-image" src="hero-image.jpg" alt="OG Mantenimiento - Servicio profesional">
+  <div class="hero-text">
+    <h1>OG Mantenimiento Integral</h1>
+    <p>Soluciones ágiles para reclamos, presupuestos y soporte técnico.</p>
+  </div>
 </header>
 
 <main>
-
   <div class="section">
     <h2>¿Quiénes somos?</h2>
     <p>Somos una empresa especializada en mantenimiento edilicio, servicios técnicos y gestión operativa para propiedades, empresas e inmobiliarias. Trabajamos con tecnología para ofrecer seguimiento y respuesta en tiempo real.</p>
@@ -110,7 +119,6 @@
     <p><strong>Presupuestos:</strong> <a href="mailto:presupuestos@ogmantenimiento.com.ar">presupuestos@ogmantenimiento.com.ar</a></p>
     <p><strong>Soporte:</strong> <a href="mailto:soporte@ogmantenimiento.com.ar">soporte@ogmantenimiento.com.ar</a></p>
   </div>
-
 </main>
 
 <footer>
