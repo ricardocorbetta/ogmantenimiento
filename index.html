@@ -5,18 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OG Mantenimiento Integral</title>
   <meta name="description" content="Soluciones de mantenimiento integral para inmobiliarias, empresas y particulares.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      font-family: 'Rubik', sans-serif;
+      background-color: #f7f9fc;
+      color: #2c3e50;
     }
     header {
-      background-color: #004466;
+      background-color: #0b3d91;
       color: white;
-      padding: 0;
       text-align: center;
     }
     .hero-image {
@@ -30,9 +32,11 @@
     .hero-text h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
+      font-weight: 600;
     }
     .hero-text p {
       font-size: 1.2em;
+      font-weight: 400;
     }
     main {
       max-width: 900px;
@@ -43,38 +47,49 @@
       margin-bottom: 40px;
     }
     .section h2 {
-      color: #004466;
+      color: #0b3d91;
       margin-bottom: 15px;
     }
     .button {
       display: inline-block;
-      background-color: #00838f;
+      background-color: #00a896;
       color: white;
       padding: 15px 25px;
       margin: 10px 10px 0 0;
       text-decoration: none;
       border-radius: 5px;
       transition: background 0.3s;
+      font-weight: 500;
     }
     .button:hover {
-      background-color: #005f66;
+      background-color: #028c7e;
     }
     footer {
-      background-color: #e0e0e0;
+      background-color: #f0f0f0;
       padding: 20px;
       text-align: center;
       font-size: 0.9em;
       color: #555;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       .hero-text h1 {
         font-size: 2em;
+      }
+      .hero-text p {
+        font-size: 1em;
+      }
+    }
+    @media (max-width: 480px) {
+      .hero-text {
+        padding: 20px 10px;
       }
       .button {
         display: block;
         width: 100%;
-        text-align: center;
         margin: 10px 0;
+      }
+      .section ul {
+        padding-left: 20px;
       }
     }
   </style>
@@ -82,7 +97,7 @@
 <body>
 
 <header>
-  <img class="hero-image" src="hero-image.jpg" alt="OG Mantenimiento - Servicio profesional">
+  <img class="hero-image" src="imagenes/hero-og.jpg" alt="OG Mantenimiento - Servicio profesional">
   <div class="hero-text">
     <h1>OG Mantenimiento Integral</h1>
     <p>Soluciones ágiles para reclamos, presupuestos y soporte técnico.</p>
@@ -92,21 +107,23 @@
 <main>
   <div class="section">
     <h2>¿Quiénes somos?</h2>
+    <img src="imagenes/equipo-og.jpg" alt="Nuestro equipo OG Mantenimiento" style="width:100%; height:auto; max-height:500px; object-fit:cover; margin-bottom: 20px;">
     <p>Somos una empresa especializada en mantenimiento edilicio, servicios técnicos y gestión operativa para propiedades, empresas e inmobiliarias. Trabajamos con tecnología para ofrecer seguimiento y respuesta en tiempo real.</p>
   </div>
 
   <div class="section">
     <h2>Servicios destacados</h2>
     <ul>
-      <li>Recepción y seguimiento de reclamos 100% online</li>
-      <li>Presupuestación rápida y precisa</li>
-      <li>Gestión de técnicos en tiempo real</li>
-      <li>Informes y trazabilidad para inmobiliarias</li>
+      <li><img src="imagenes/servicio-reclamos.jpg" alt="Reclamos" style="width:100%; max-width:500px; margin-bottom:10px;"> Recepción y seguimiento de reclamos 100% online</li>
+      <li><img src="imagenes/servicio-presupuestos.jpg" alt="Presupuestos" style="width:100%; max-width:500px; margin-bottom:10px;"> Presupuestación rápida y precisa</li>
+      <li><img src="imagenes/servicio-tecnicos.jpg" alt="Técnicos" style="width:100%; max-width:500px; margin-bottom:10px;"> Gestión de técnicos en tiempo real</li>
+      <li><img src="imagenes/servicio-informes.jpg" alt="Informes" style="width:100%; max-width:500px; margin-bottom:10px;"> Informes y trazabilidad para inmobiliarias</li>
     </ul>
   </div>
 
   <div class="section">
     <h2>Accesos rápidos</h2>
+    <img src="imagenes/botones-apps.jpg" alt="Accesos rápidos OG" style="width:100%; height:auto; margin-bottom: 20px;">
     <a class="button" href="https://LINK_GLIDE_RECLAMOS" target="_blank">🔧 Hacer un Reclamo</a>
     <a class="button" href="https://LINK_GLIDE_TECNICOS" target="_blank">📲 App para Técnicos</a>
     <a class="button" href="mailto:presupuestos@ogmantenimiento.com.ar">💰 Solicitar Presupuesto</a>
@@ -114,6 +131,7 @@
 
   <div class="section">
     <h2>Contacto</h2>
+    <img src="imagenes/contacto-oficina.jpg" alt="Oficinas OG Mantenimiento" style="width:100%; height:auto; margin-bottom: 20px;">
     <p><strong>Correo general:</strong> <a href="mailto:info@ogmantenimiento.com.ar">info@ogmantenimiento.com.ar</a></p>
     <p><strong>Reclamos:</strong> <a href="mailto:reclamos@ogmantenimiento.com.ar">reclamos@ogmantenimiento.com.ar</a></p>
     <p><strong>Presupuestos:</strong> <a href="mailto:presupuestos@ogmantenimiento.com.ar">presupuestos@ogmantenimiento.com.ar</a></p>
