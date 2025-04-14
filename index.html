@@ -1,137 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OG Mantenimiento Integral</title>
-  <meta name="description" content="Soluciones ágiles en mantenimiento y obras menores en La Plata y zona.">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&family=Work+Sans:wght@300;500&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --color-principal: #0D47A1;
-      --color-secundario: #1976D2;
-      --color-acento: #00ACC1;
-      --color-fondo: #F5F7FA;
-      --color-texto: #263238;
-      --fuente-base: 'Work Sans', sans-serif;
-      --fuente-titulo: 'Rubik', sans-serif;
-    }
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: var(--fuente-base);
-      background-color: var(--color-fondo);
-      color: var(--color-texto);
-    }
-    header {
-      background: linear-gradient(135deg, var(--color-principal), var(--color-secundario));
-      padding: 40px 20px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-    header img.logo {
-      max-width: 220px;
-      display: block;
-      margin: 0 auto 10px;
-    }
-    .fallback-logo {
-      font-family: var(--fuente-titulo);
-      font-size: 1.8em;
-      color: white;
-      display: none;
-    }
-    .intro {
-      font-size: 1em;
-      color: white;
-    }
-    main {
-      max-width: 960px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    h2 {
-      color: var(--color-principal);
-      font-family: var(--fuente-titulo);
-      margin-top: 30px;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin-bottom: 10px;
-      padding-left: 16px;
-      position: relative;
-    }
-    ul li::before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: var(--color-acento);
-    }
-    .button {
-      background-color: var(--color-acento);
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
-      border-radius: 6px;
-      font-weight: 500;
-    }
-    footer {
-      background-color: #ECEFF1;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #546E7A;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
+    header, section, footer { padding: 2em; }
+    header { background-color: #1e293b; color: white; text-align: center; }
+    nav { text-align: center; background: #334155; padding: 1em 0; }
+    nav a { color: white; margin: 0 1em; text-decoration: none; font-weight: bold; }
+    .hero { background-color: #f1f5f9; padding: 3em; text-align: center; }
+    .hero h1 { font-size: 2.5em; margin-bottom: 0.5em; }
+    .btn { background-color: #0ea5e9; color: white; padding: 1em 2em; border: none; border-radius: 5px; font-size: 1em; text-decoration: none; display: inline-block; margin: 0.5em 0; }
+    .section-title { font-size: 1.8em; margin-bottom: 1em; text-align: center; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1em; }
+    .card { background: #e2e8f0; padding: 1.5em; border-radius: 8px; }
+    .cta-buttons { text-align: center; margin-top: 2em; }
+    footer { background: #1e293b; color: white; text-align: center; font-size: 0.9em; }
   </style>
-  <script>
-    window.addEventListener("DOMContentLoaded", () => {
-      const logoImg = document.querySelector(".logo");
-      const fallback = document.querySelector(".fallback-logo");
-      logoImg.onerror = () => {
-        logoImg.style.display = "none";
-        fallback.style.display = "block";
-      };
-    });
-  </script>
 </head>
 <body>
   <header>
-    <img class="logo" src="https://res.cloudinary.com/dohfnpgq9/image/upload/v1744492996/A_logo_for_OG_Mantenimiento_Integral_is_set_agai.png" alt="OG Mantenimiento Integral">
-    <div class="fallback-logo">OG Mantenimiento Integral</div>
-    <div class="intro">App de gestión operativa, reclamos y presupuestos en La Plata.</div>
+    <h1>OG Mantenimiento Integral</h1>
+    <p>Servicios integrales para propiedades exigentes</p>
   </header>
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <section class="hero">
+    <h1>Soluciones confiables, ágiles y trazables</h1>
+    <p>Más de 10 años de experiencia en mantenimiento preventivo, correctivo y edilicio en La Plata y alrededores.</p>
+    <div class="cta-buttons">
+      <a class="btn" href="https://og-mantenimiento-int-lh26.glide.page/dl/74c4fe" target="_blank">🔧 Hacer un Reclamo</a>
+      <a class="btn" href="mailto:presupuestos@ogmantenimiento.com.ar">💰 Solicitar Presupuesto</a>
+      <a class="btn" href="https://wa.me/5492210000000" target="_blank">💬 Consultar por WhatsApp</a>
+    </div>
+  </section>
 
-  <main>
-    <h2>Accesos rápidos</h2>
-    <ul>
-      <li><a class="button" href="#">📲 Ingreso Técnico</a></li>
-      <li><a class="button" href="#">📋 Cargar Reclamo</a></li>
-      <li><a class="button" href="#">💰 Presupuestos</a></li>
-    </ul>
+  <section id="servicios">
+    <h2 class="section-title">Servicios que ofrecemos</h2>
+    <div class="services">
+      <div class="card"><strong>🔧 Mantenimiento General</strong><br>Programado, por demanda y urgencias 24/7</div>
+      <div class="card"><strong>⚡ Electricidad</strong><br>Reparaciones, tableros, iluminación y certificaciones</div>
+      <div class="card"><strong>💧 Plomería</strong><br>Cañerías, bombas, sanitarios y destapaciones</div>
+      <div class="card"><strong>🔥 Gas y Calefacción</strong><br>Instalación, mantenimiento y certificados</div>
+      <div class="card"><strong>❄️ Climatización y Aire Acondicionado</strong><br>Instalación, revisión, carga de gas y limpieza de filtros</div>
+      <div class="card"><strong>🪵 Carpintería y Herrería</strong><br>Rejas, portones y muebles a medida</div>
+      <div class="card"><strong>🎨 Pintura</strong><br>Interior, exterior, impermeabilización y durlock</div>
+      <div class="card"><strong>🧱 Obras</strong><br>Filtraciones, humedad, remodelaciones</div>
+      <div class="card"><strong>🌿 Complementarios</strong><br>Limpieza post-obra, jardinería, control de plagas</div>
+    </div>
+    <div class="cta-buttons">
+      <a class="btn" href="mailto:presupuestos@ogmantenimiento.com.ar">📩 Pedir Presupuesto Ahora</a>
+    </div>
+  </section>
 
-    <h2>¿Quiénes somos?</h2>
-    <p>Somos OG Mantenimiento Integral, una empresa con base en La Plata dedicada a brindar soluciones en mantenimiento edilicio, reparaciones y obras menores para propiedades exigentes. Incorporamos tecnología y procesos simples para atender con agilidad y trazabilidad total.</p>
-
-    <h2>Servicios destacados</h2>
-    <ul>
-      <li>Electricidad, plomería, gas y climatización</li>
-      <li>Pintura, albañilería, herrería, carpintería</li>
-      <li>Atención de urgencias 24/7</li>
-      <li>Presupuestos en menos de 24hs</li>
-      <li>Trazabilidad y seguimiento digital</li>
-    </ul>
-  </main>
-
-  <footer>
-    © 2024 OG Mantenimiento Integral · La Plata · Todos los derechos reservados.
+  <footer id="contacto">
+    <p>Director: Nicolás Alda | Base: Ciudad de La Plata | Cobertura: Zona de Influencia</p>
+    <p>📧 <a href="mailto:info@ogmantenimiento.com.ar" style="color: white;">info@ogmantenimiento.com.ar</a></p>
+    <p>&copy; 2025 OG Mantenimiento Integral</p>
   </footer>
 </body>
 </html>
